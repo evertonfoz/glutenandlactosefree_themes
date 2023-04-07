@@ -36,7 +36,7 @@ const lightColorScheme = ColorScheme(
 
 const darkColorScheme = ColorScheme(
   brightness: Brightness.dark,
-  primary: Color(0xFFFFB95A),
+  primary: Color(0xFF02374B),
   onPrimary: Color(0xFF462A00),
   primaryContainer: Color(0xFF643F00),
   onPrimaryContainer: Color(0xFFFFDDB6),
@@ -67,3 +67,7 @@ const darkColorScheme = ColorScheme(
   outlineVariant: Color(0xFF504539),
   scrim: Color(0xFF000000),
 );
+
+isInDarkMode(BuildContext context) {
+  return Theme.of(context).brightness == Brightness.dark;
+}
