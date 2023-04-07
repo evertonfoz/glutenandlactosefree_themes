@@ -67,7 +67,3 @@ const darkColorScheme = ColorScheme(
   outlineVariant: Color(0xFF504539),
   scrim: Color(0xFF000000),
 );
-
-isInDarkMode(BuildContext context) {
-  return MediaQuery.of(context).platformBrightness == Brightness.dark;
-}
