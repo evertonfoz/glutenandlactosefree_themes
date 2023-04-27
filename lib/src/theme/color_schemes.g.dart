@@ -67,3 +67,40 @@ const darkColorScheme = ColorScheme(
   outlineVariant: Color(0xFF504539),
   scrim: Color(0xFF000000),
 );
+
+lightInputDecorationTheme() {
+  return InputDecorationTheme(
+    focusedBorder: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(5),
+      borderSide: BorderSide(
+        color: lightColorScheme.primaryContainer,
+        width: 2,
+      ),
+    ),
+    border: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(5),
+      borderSide: BorderSide(color: darkColorScheme.primary),
+    ),
+    focusedErrorBorder: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(5),
+      borderSide: BorderSide(
+        color: lightColorScheme.primaryContainer,
+        width: 2,
+      ),
+    ),
+    enabledBorder: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(5),
+      borderSide: BorderSide(
+        color: lightColorScheme.primaryContainer.withOpacity(0.2),
+        width: 1,
+      ),
+    ),
+    errorBorder: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(5),
+      borderSide: BorderSide(
+        color: lightColorScheme.primaryContainer,
+        width: 2,
+      ),
+    ),
+  );
+}
