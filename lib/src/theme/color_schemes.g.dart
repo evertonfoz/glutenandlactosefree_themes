@@ -72,9 +72,9 @@ const darkColorScheme = ColorScheme(
 lightInputDecorationTheme() {
   return InputDecorationTheme(
     focusedBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(5),
+      borderRadius: BorderRadius.circular(100),
       borderSide: BorderSide(
-        color: lightColorScheme.primaryContainer,
+        color: darkColorScheme.primary,
         width: 2,
       ),
     ),
